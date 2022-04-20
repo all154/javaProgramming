@@ -21,4 +21,10 @@ public class Counter {
     public void decrease() {
         this.value = this.value - 1;
     }
+    
+    public void increase(int increaseBy) {
+        if (increaseBy > 0) {
+            this.value = this.value + increaseBy;
+        }
+    }
 }
