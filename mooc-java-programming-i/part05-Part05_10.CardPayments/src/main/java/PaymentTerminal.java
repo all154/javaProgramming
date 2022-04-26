@@ -52,6 +52,13 @@ public class PaymentTerminal {
             return false;
         }
     }
+    
+    public void addMoneyToCard(PaymentCard card, double sum) {
+        if (sum > 0) {
+            card.addMoney(sum);
+            money += sum;
+        }
+    }
 
     @Override
     public String toString() {
