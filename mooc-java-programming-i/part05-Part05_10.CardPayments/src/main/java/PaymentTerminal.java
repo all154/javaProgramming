@@ -42,6 +42,16 @@ public class PaymentTerminal {
             return false;
         }
     }
+    
+    public boolean eatHeartily(PaymentCard card) {
+        if (card.balance() >= 4.3) {
+            card.takeMoney(4.3);
+            this.heartyMeals += 1;
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     @Override
     public String toString() {
