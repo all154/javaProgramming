@@ -32,7 +32,16 @@ public class PaymentTerminal {
             return payment;
         }
     }
-
+    
+    public boolean eatAffordably(PaymentCard card) {
+        if (card.balance() >= 2.5) {
+            card.takeMoney(2.5);
+            this.affordableMeals += 1;
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     @Override
     public String toString() {
