@@ -24,7 +24,13 @@ public class PaymentTerminal {
     }
 
     public double eatHeartily(double payment) {
-        return -1;
+        if (payment >= 4.3) {
+            this.money += 4.3;
+            this.heartyMeals += 1;
+            return payment - 4.3;
+        } else {
+            return payment;
+        }
     }
 
 
