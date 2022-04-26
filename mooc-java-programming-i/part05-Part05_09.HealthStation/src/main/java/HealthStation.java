@@ -6,5 +6,9 @@ public class HealthStation {
         // return the weight of the person passed as the parameter
         return person.getWeight();
     }
+    
+    public void feed(Person person) {
+        person.setWeight(person.getWeight()+1);
+    }
 
 }
