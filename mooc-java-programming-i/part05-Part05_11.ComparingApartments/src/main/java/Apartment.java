@@ -14,5 +14,9 @@ public class Apartment {
     public boolean largerThan(Apartment compared) {
         return this.squares>compared.squares;
     }
+    
+    public int priceDifference(Apartment compared) {
+        return Math.abs(this.princePerSquare*this.squares - compared.princePerSquare*compared.squares);
+    }
 
 }
