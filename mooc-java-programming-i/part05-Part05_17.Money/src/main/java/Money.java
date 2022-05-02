@@ -48,5 +48,19 @@ public class Money {
             return false;
         }
     }
+    
+    public Money minus(Money decreaser) {
+        if (this.lessThan(decreaser)) {
+            return new Money(0,0);
+        }
+        
+        if (this.cents() - decreaser.cents() < 0) {
+            Money newMoney = new Money(this.euros() - decreaser.euros() - 1, 100
+                    + this.cents() - decreaser.cents());
+            return newMoney;
+        }
+        
+        return new Money(this.euros() - decreaser.euros(),this.cents() - decreaser.cents());
+    }
 
 }
