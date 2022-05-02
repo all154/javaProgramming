@@ -48,5 +48,20 @@ public class SimpleDate {
         }
         
     }
+    
+    public void advance(int howManyDays) {
+        if (this.day + howManyDays <= 30) {
+            this.day = this.day + howManyDays;
+        } else {
+            this.day = (this.day + howManyDays)%30;
+            
+            if (this.month < 12){
+                this.month ++;
+            } else {
+                this.month = 1;
+                this.year++;
+            }
+        }
+    }
 
 }
