@@ -8,4 +8,8 @@ public class Gift {
         this.weight = weight;
     }
     
+    public String getName() {
+        return this.name;
+    }
+    
 }
