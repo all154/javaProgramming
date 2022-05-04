@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Menu {
 
@@ -19,5 +20,9 @@ public class Menu {
         for (String meal: this.meals) {
             System.out.println(meal);
         }
+    }
+    
+    public void clearMenu() {
+        this.meals.clear();
     }
 }
