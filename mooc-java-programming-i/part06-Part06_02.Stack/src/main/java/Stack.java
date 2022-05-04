@@ -12,4 +12,8 @@ public class Stack {
     public boolean isEmpty() {
         return this.stack.isEmpty();
     }
+    
+    public void add(String value) {
+        this.stack.add(value);
+    }
 }
