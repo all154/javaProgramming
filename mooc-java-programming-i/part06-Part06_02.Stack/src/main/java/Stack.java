@@ -8,4 +8,8 @@ public class Stack {
     public Stack() {
         this.stack = new ArrayList<>();
     }
+    
+    public boolean isEmpty() {
+        return this.stack.isEmpty();
+    }
 }
