@@ -8,4 +8,10 @@ public class MessagingService {
     public MessagingService() {
         this.messages = new ArrayList<>();
     }
+    
+    public void add(Message message) {
+        if (message.getContent().length() <= 280){
+            this.messages.add(message);            
+        }
+    }
 }
