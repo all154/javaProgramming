@@ -16,4 +16,9 @@ public class Gift {
         return this.weight;
     }
     
+    @Override
+    public String toString() {
+        return this.name + "(" + this.weight + " kg)";
+    }
+    
 }
