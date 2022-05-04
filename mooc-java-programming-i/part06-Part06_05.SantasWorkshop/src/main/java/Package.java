@@ -8,4 +8,8 @@ public class Package {
     public Package() {
         this.gifts = new ArrayList<>();
     }
+    
+    public void addGift(Gift gift) {
+        this.gifts.add(gift);
+    }
 }
