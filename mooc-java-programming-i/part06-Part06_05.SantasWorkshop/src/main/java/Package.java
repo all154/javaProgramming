@@ -12,4 +12,14 @@ public class Package {
     public void addGift(Gift gift) {
         this.gifts.add(gift);
     }
+    
+    public int totalWeight() {
+        int totalWeight = 0;
+        
+        for (Gift gift: this.gifts) {
+            totalWeight += gift.getWeight();
+        }
+        
+        return totalWeight;
+    }
 }
