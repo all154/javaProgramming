@@ -20,4 +20,10 @@ public class Stack {
     public ArrayList<String> values() {
         return this.stack;
     }
+    
+    public String take() {
+        String s = this.stack.get(this.stack.size() - 1);
+        this.stack.remove(this.stack.size() - 1);
+        return s;
+    }
 }
