@@ -12,4 +12,8 @@ public class Gift {
         return this.name;
     }
     
+    public int getWeight() {
+        return this.weight;
+    }
+    
 }
