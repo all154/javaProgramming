@@ -14,4 +14,8 @@ public class Room {
         this.people.add(person);
     }
     
+    public boolean isEmpty() {
+        return this.people.isEmpty();
+    }
+    
 }
