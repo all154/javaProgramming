@@ -22,4 +22,20 @@ public class Room {
         return this.people;
     }
     
+    public Person shortest() {
+        if (this.people.isEmpty()) {
+            return null;
+        }
+        
+        Person returnPerson = new Person("", 10000);
+        
+        for (Person person: this.people) {
+            if (person.getHeight()< returnPerson.getHeight()) {
+                returnPerson = person;
+            }
+        }
+        
+        return returnPerson;
+    }
+    
 }
