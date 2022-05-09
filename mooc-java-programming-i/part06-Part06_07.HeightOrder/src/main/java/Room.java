@@ -38,4 +38,15 @@ public class Room {
         return returnPerson;
     }
     
+    public Person take() {
+        if (this.people.isEmpty()) {
+            return null;
+        }
+        
+        Person shortestPerson = this.shortest();
+        this.people.remove(this.shortest());
+        
+        return shortestPerson;
+    }
+    
 }
