@@ -18,4 +18,8 @@ public class Room {
         return this.people.isEmpty();
     }
     
+    public ArrayList<Person> getPersons() {
+        return this.people;
+    }
+    
 }
