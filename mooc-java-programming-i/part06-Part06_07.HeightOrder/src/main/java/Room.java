@@ -10,4 +10,8 @@ public class Room {
         this.people = new ArrayList<>();
     }
     
+    public void add(Person person) {
+        this.people.add(person);
+    }
+    
 }
