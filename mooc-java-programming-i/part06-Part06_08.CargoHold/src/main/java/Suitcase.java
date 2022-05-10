@@ -52,4 +52,18 @@ public class Suitcase {
         }
     }
     
+    public int totalWeight() {
+        if (this.items.isEmpty()){
+            return 0;
+        }
+        
+        int totalWeight = 0;
+        
+        for (Item item: this.items) {
+                totalWeight += item.getWeight();
+        }
+        
+        return totalWeight;
+    }
+    
 }
