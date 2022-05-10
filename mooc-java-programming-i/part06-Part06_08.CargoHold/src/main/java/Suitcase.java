@@ -29,13 +29,21 @@ public class Suitcase {
     
     @Override
     public String toString() {
+        if (this.items.isEmpty()) {
+            return "no items (0 kg)";
+        }
+        
         int totalWeight = 0;
         
         for (Item item: items) {
                 totalWeight += item.getWeight();
         }
         
-        return this.items.size() + " items (" + totalWeight + " kg)";
+        if (this.items.size() == 1) {
+            return "1 item (" + totalWeight + " kg)";
+        } else {
+            return this.items.size() + " items (" + totalWeight + " kg)";
+        }
     }
     
 }
