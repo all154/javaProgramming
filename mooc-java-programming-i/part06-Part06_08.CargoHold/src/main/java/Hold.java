@@ -22,4 +22,14 @@ public class Hold {
             this.suitcases.add(suitcase);
         }
     }
+    
+    public int totalWeight() {
+        int totalWeight = 0;
+        
+        for (Suitcase object: this.suitcases) {
+            totalWeight += object.totalWeight();
+        }
+        
+        return totalWeight;
+    }
 }
