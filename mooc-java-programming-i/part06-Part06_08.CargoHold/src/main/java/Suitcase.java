@@ -33,16 +33,10 @@ public class Suitcase {
             return "no items (0 kg)";
         }
         
-        int totalWeight = 0;
-        
-        for (Item item: items) {
-                totalWeight += item.getWeight();
-        }
-        
         if (this.items.size() == 1) {
-            return "1 item (" + totalWeight + " kg)";
+            return "1 item (" + this.totalWeight() + " kg)";
         } else {
-            return this.items.size() + " items (" + totalWeight + " kg)";
+            return this.items.size() + " items (" + this.totalWeight() + " kg)";
         }
     }
     
