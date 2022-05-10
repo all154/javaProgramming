@@ -24,8 +24,18 @@ public class Suitcase {
             if (totalWeight + item.getWeight() <= this.maximumWeight) {
                 this.items.add(item);
             }
+        }      
+    }
+    
+    @Override
+    public String toString() {
+        int totalWeight = 0;
+        
+        for (Item item: items) {
+                totalWeight += item.getWeight();
         }
         
+        return this.items.size() + " items (" + totalWeight + " kg)";
     }
     
 }
