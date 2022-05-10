@@ -31,4 +31,10 @@ public class Hold {
     public String toString() {
         return this.suitcases.size() + " suitcases (" + this.totalWeight() + " kg)";
     }
+    
+    public void printItems() {
+        for (Suitcase suitcase: this.suitcases) {
+            suitcase.printItems();
+        }
+    }
 }
