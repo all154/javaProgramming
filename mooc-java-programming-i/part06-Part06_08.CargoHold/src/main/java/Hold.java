@@ -26,4 +26,9 @@ public class Hold {
         
         return totalWeight;
     }
+    
+    @Override
+    public String toString() {
+        return this.suitcases.size() + " suitcases (" + this.totalWeight() + " kg)";
+    }
 }
