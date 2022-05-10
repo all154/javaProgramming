@@ -12,19 +12,9 @@ public class Suitcase {
     }
     
     public void addItem(Item item) {
-        int totalWeight = 0;
-        
-        if (this.items.isEmpty() && item.getWeight() <= this.maximumWeight) {
+        if (this.totalWeight() + item.getWeight() <= this.maximumWeight) {
             this.items.add(item);
-        } else {
-            for (Item object: items) {
-                totalWeight += object.getWeight();
-            }
-            
-            if (totalWeight + item.getWeight() <= this.maximumWeight) {
-                this.items.add(item);
-            }
-        }      
+        }   
     }
     
     @Override
