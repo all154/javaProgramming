@@ -46,4 +46,10 @@ public class Suitcase {
         }
     }
     
+    public void printItems() {
+        for (Item item: this.items){
+            System.out.println(item);
+        }
+    }
+    
 }
