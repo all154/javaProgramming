@@ -60,4 +60,18 @@ public class GradeRegister {
         
         return (double) totalSum/this.grades.size();
     }
+    
+    public double averageOfPoints() {
+        if (this.points.isEmpty()) {
+            return -1;
+        }
+        
+        int totalSum = 0;
+        
+        for (int point: this.points) {
+            totalSum += point;
+        }
+        
+        return (double) totalSum/this.points.size();
+    }
 }
