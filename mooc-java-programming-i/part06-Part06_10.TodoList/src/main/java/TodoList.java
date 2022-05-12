@@ -18,4 +18,8 @@ public class TodoList {
             System.out.println((this.list.indexOf(task)+1) + ": " + task);
         }
     }
+    
+    public void remove(int number) {
+        this.list.remove(number - 1);
+    }
 }
