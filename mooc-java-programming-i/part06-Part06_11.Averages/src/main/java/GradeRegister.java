@@ -48,17 +48,7 @@ public class GradeRegister {
     }
     
     public double averageOfGrades() {
-        if (this.grades.isEmpty()) {
-            return -1;
-        }
-        
-        int totalSum = 0;
-        
-        for (int grade: this.grades) {
-            totalSum += grade;
-        }
-        
-        return (double) totalSum/this.grades.size();
+        return averageOfArrayList(this.grades);
     }
     
     public double averageOfPoints() {
