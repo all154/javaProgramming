@@ -74,4 +74,18 @@ public class GradeRegister {
         
         return (double) totalSum/this.points.size();
     }
+    
+    public double averageOfArrayList(ArrayList<Integer> arrayList){
+        if (arrayList.isEmpty()) {
+            return -1;
+        }
+        
+        int totalSum = 0;
+        
+        for (int element: arrayList) {
+            totalSum += element;
+        }
+        
+        return (double) totalSum/arrayList.size();
+    }
 }
