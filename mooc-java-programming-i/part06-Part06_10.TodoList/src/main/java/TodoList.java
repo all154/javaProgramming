@@ -12,4 +12,10 @@ public class TodoList {
     public void add(String task) {
         this.list.add(task);
     }
+    
+    public void print() {
+        for (String task: this.list){
+            System.out.println((this.list.indexOf(task)+1) + ": " + task);
+        }
+    }
 }
