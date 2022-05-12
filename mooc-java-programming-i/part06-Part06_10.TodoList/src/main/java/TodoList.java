@@ -8,4 +8,8 @@ public class TodoList {
     public TodoList(){
         this.list = new ArrayList<>();
     }
+    
+    public void add(String task) {
+        this.list.add(task);
+    }
 }
