@@ -19,7 +19,9 @@ public class UserInterface {
             if (command.equals("stop")){
                 break;
             } else if (command.equals("add")) {
-                this.list.add(command);
+                System.out.println("To add:");
+                String task = scanner.nextLine();
+                this.list.add(task);
             } else if (command.equals("list")) {
                 this.list.print();
             } else if (command.equals("remove")) {
