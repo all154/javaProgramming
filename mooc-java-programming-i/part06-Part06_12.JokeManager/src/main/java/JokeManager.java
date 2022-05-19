@@ -8,4 +8,8 @@ public class JokeManager {
     public JokeManager() {
         this.jokes = new ArrayList<>();
     }
+    
+    public void addJoke(String joke) {
+        this.jokes.add(joke);
+    }
 }
