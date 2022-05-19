@@ -23,4 +23,10 @@ public class JokeManager {
             return this.jokes.get(index);
         }
     }
+    
+    public void printJokes() {
+        for (String joke: this.jokes) {
+            System.out.println(joke);             
+        }
+    }
 }
