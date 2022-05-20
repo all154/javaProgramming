@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class ExerciseManagement {
     
     private ArrayList<String> exercises;
+    private ArrayList<String> completedExercises;
     
     public ExerciseManagement() {
         this.exercises = new ArrayList<>();
+        this.completedExercises = new ArrayList<>();
     }
     
     public ArrayList<String> exerciseList() {
