@@ -11,7 +11,7 @@ public class ExerciseManagement {
     }
     
     public ArrayList<String> exerciseList() {
-        return new ArrayList<>();
+        return this.exercises;
     }
 
 }
