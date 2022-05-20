@@ -33,7 +33,7 @@ public class ExerciseManagementTest {
     public void exerciseCanBeMarkedAsCompleted() {
         management.add("New exercise");
         management.markAsCompleted("New exercise");
-        assertTrue(manager.isCompleted("New exercise"));
+        assertTrue(management.isCompleted("New exercise"));
     }
 
 }
