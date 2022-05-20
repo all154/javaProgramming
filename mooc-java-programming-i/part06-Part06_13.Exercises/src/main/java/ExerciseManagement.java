@@ -13,5 +13,9 @@ public class ExerciseManagement {
     public ArrayList<String> exerciseList() {
         return this.exercises;
     }
+    
+    public void add(String exercise) {
+        this.exercises.add(exercise);
+    }
 
 }
