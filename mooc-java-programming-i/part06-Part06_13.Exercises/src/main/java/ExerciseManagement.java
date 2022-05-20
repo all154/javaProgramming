@@ -25,6 +25,6 @@ public class ExerciseManagement {
     }
     
     public boolean isCompleted(String exercise) {
-        return true;
+        return this.completedExercises.contains(exercise);
     }
 }
