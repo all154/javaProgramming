@@ -30,5 +30,10 @@ public class Container {
             }
         }
     }
+    
+    @Override
+    public String toString() {
+        return this.contains + "/100";
+    }
 
 }
