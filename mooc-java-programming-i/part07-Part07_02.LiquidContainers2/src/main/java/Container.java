@@ -21,4 +21,14 @@ public class Container {
         }
     }
 
+    public void remove(int amount) {
+        if (amount > 0) {
+            if (this.contains - amount > 0) {
+                this.contains -= amount;
+            } else {
+                this.contains = 0;
+            }
+        }
+    }
+
 }
