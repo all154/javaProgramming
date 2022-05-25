@@ -6,4 +6,8 @@ public class Container {
         this.contains = 0;
     }
     
+    public int contains() {
+        return this.contains;
+    }
+    
 }
