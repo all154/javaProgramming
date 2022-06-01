@@ -56,5 +56,16 @@ public class MainProgram {
         array[index1] = array[index2];
         array[index2] = helper;
     }
-
+    
+    public static void sort(int[] array) {
+        int i = 0;
+        int indexOfSmallest = 0;
+        
+        while (i < array.length) {
+            indexOfSmallest = MainProgram.indexOfSmallestFrom(array, i);
+            MainProgram.swap(array, i, indexOfSmallest);
+            i++;
+        }
+    }
+    
 }
