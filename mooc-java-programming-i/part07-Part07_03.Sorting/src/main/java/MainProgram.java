@@ -49,5 +49,12 @@ public class MainProgram {
         
         return index;
     }
+    
+    public static void swap(int[] array, int index1, int index2) {
+        int helper = array[index1];
+        
+        array[index1] = array[index2];
+        array[index2] = helper;
+    }
 
 }
