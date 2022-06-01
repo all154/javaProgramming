@@ -23,5 +23,9 @@ public class Main {
     public static void sortIntegers(ArrayList<Integer> integers) {
         Collections.sort(integers);
     }
+    
+    public static void sortStrings(ArrayList<String> strings) {
+        Collections.sort(strings);
+    }
 
 }
