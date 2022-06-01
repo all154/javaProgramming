@@ -13,5 +13,9 @@ public class Main {
     public static void sort(int[] array) {
         Arrays.sort(array);
     }
+    
+    public static void sort(String[] array) {
+        Arrays.sort(array);
+    }
 
 }
