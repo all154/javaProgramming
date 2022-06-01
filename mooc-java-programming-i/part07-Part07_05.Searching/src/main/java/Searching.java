@@ -54,6 +54,24 @@ public class Searching {
     }
 
     public static int binarySearch(ArrayList<Book> books, long searchedId) {
+        int lower = 0;
+        int upper = books.size();
+        
+        while ((lower + upper)/2 != lower){
+            if (books.get((lower + upper)/2).getId() == searchedId) {
+                return (lower + upper)/2;
+            } else if (books.get((lower + upper)/2).getId() > searchedId) {
+                upper = (lower + upper)/2;
+            } else if (books.get((lower + upper)/2).getId() < searchedId) {
+                lower = (lower + upper)/2;
+            }
+        }
+        
+        if ((lower + upper)/2 == lower) {
+            if (books.get(lower).getId() == searchedId) {
+                return lower;
+            }
+        }
         return -1;
     }
 }
