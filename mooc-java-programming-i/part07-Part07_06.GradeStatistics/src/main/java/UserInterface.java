@@ -1,13 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author alois
- */
+import java.util.Scanner;
+
+
 public class UserInterface {
-    
+    private Scanner scanner;
+
+    public UserInterface(Scanner scanner) {
+        this.scanner = scanner;
+    }
 }
