@@ -8,4 +8,21 @@ public class UserInterface {
     public UserInterface(Scanner scanner) {
         this.scanner = scanner;
     }
+    
+    public void start() {
+        Points points = new Points();
+        
+        System.out.println("Enter point totals, -1 stops:");
+        
+        while (true) {
+            int point = Integer.valueOf(scanner.nextLine());
+
+            if (point == -1) {
+                System.out.println("Point average (all): " + points.average());
+                break;
+            }
+            
+            points.add(point);
+        }
+    }
 }
