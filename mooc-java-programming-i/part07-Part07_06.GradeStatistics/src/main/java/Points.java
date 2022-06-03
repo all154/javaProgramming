@@ -44,4 +44,16 @@ public class Points {
         }
     }
     
+    public double passPercentage() {
+        int passed = 0;
+        
+        for (int point: this.points) {
+            if (point >= 50) {
+                passed += 1;
+            }
+        }
+        
+        return 100*(double)passed/this.points.size();
+    }
+    
 }
