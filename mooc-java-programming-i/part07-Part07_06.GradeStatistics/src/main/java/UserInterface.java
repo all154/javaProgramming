@@ -19,6 +19,7 @@ public class UserInterface {
 
             if (point == -1) {
                 System.out.println("Point average (all): " + points.average());
+                System.out.println("Point average (passing): " + points.passingAverage());
                 break;
             }
             
