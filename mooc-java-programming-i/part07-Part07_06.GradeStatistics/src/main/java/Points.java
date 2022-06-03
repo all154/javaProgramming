@@ -15,4 +15,14 @@ public class Points {
         }
     }
     
+    public int average() {
+        int sum = 0;
+        
+        for (int point: this.points) {
+            sum =+ point;            
+        }
+        
+        return sum / this.points.size();
+    }
+    
 }
