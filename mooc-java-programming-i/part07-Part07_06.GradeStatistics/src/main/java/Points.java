@@ -9,4 +9,10 @@ public class Points {
         this.points = new ArrayList<>();
     }
     
+    public void add(int point) {
+        if (point <= 100 && point >= 0) {
+            this.points.add(point);
+        }
+    }
+    
 }
