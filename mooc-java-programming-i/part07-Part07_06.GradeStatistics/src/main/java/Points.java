@@ -25,4 +25,21 @@ public class Points {
         return (double) sum / this.points.size();
     }
     
+    public String passingAverage() {
+        int sum = 0;
+        
+        for (int point: this.points) {
+            if (point > 50) {
+                sum += point;
+            }
+        }
+        
+        if (sum == 0) {
+            return "-";
+        } else {
+            double average = sum / this.points.size();
+            return "".valueOf(average);
+        }
+    }
+    
 }
