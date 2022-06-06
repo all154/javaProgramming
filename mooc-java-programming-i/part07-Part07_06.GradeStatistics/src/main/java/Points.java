@@ -57,7 +57,6 @@ public class Points {
     }
     
     public void gradeDistribution() {
-        String star = "*";
         int grade0 = 0;
         int grade1 = 0;
         int grade2 = 0;
@@ -83,46 +82,17 @@ public class Points {
         
         System.out.println("Grade distribution:");
         System.out.print("5: ");
-        
-        for (int i = 0; i < grade5; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
-        
+        printStars(grade5);
         System.out.print("4: ");
-        
-        for (int i = 0; i < grade4; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
-        
+        printStars(grade4);
         System.out.print("3: ");
-        
-        for (int i = 0; i < grade3; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
-        
+        printStars(grade3);
         System.out.print("2: ");
-        
-        for (int i = 0; i < grade2; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
-        
+        printStars(grade2);
         System.out.print("1: ");
-        
-        for (int i = 0; i < grade1; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
-        
+        printStars(grade1);
         System.out.print("0: ");
-        
-        for (int i = 0; i < grade0; i++) {
-            System.out.print("*");
-        }
-        System.out.println("");
+        printStars(grade0);
     }
     
     public static void printStars(int number){
