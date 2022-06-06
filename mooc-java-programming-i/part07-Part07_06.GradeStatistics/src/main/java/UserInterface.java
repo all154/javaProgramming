@@ -21,6 +21,7 @@ public class UserInterface {
                 System.out.println("Point average (all): " + points.average());
                 System.out.println("Point average (passing): " + points.passingAverage());
                 System.out.println("Pass percentage: " + points.passPercentage());
+                points.gradeDistribution();
                 break;
             }
             
