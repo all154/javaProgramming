@@ -19,4 +19,15 @@ public class Birds {
         this.birds.add(new Bird(name, latinName));
     }
     
+    public void observation(Scanner scan) {
+        System.out.println("Bird? ");
+        String birdName = scan.nextLine();
+        
+        for (Bird bird: this.birds) {
+            if (birdName.equals(bird.getName())){
+                bird.addObservation();
+            }
+        }
+    }
+    
 }
