@@ -19,6 +19,11 @@ public class UserInterface {
             birds.add(scanner);
         }
         
+        if (command.equals("Observation")) {
+            birds.observation(scanner);
+        }
+
+        
     }
 
 }
