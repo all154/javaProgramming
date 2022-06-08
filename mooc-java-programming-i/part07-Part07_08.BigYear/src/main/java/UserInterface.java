@@ -22,6 +22,10 @@ public class UserInterface {
         if (command.equals("Observation")) {
             birds.observation(scanner);
         }
+        
+        if (command.equals("All")) {
+            birds.all();
+        }
 
         
     }
