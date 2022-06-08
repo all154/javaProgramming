@@ -13,4 +13,8 @@ public class Bird {
     public String getName() {
         return this.name;
     }
+    
+    public void addObservation() {
+        this.observations++;
+    }
 }
