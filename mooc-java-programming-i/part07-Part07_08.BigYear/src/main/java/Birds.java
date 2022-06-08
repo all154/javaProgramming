@@ -30,4 +30,10 @@ public class Birds {
         }
     }
     
+    public void all() {
+        for (Bird bird: this.birds){
+            System.out.println(bird);
+        }
+    }
+    
 }
