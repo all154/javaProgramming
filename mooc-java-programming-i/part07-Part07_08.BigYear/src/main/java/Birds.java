@@ -36,4 +36,15 @@ public class Birds {
         }
     }
     
+    public void one(Scanner scan) {
+        System.out.println("Bird? ");
+        String birdName = scan.nextLine();
+        
+        for (Bird bird: this.birds) {
+            if (birdName.equals(bird.getName())){
+                System.out.println(bird);
+            }
+        }
+    }
+    
 }
