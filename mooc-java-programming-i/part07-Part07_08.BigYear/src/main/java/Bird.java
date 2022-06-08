@@ -9,4 +9,8 @@ public class Bird {
         this.latinName = latinName;
         this.observations = 0;
     }
+    
+    public String getName() {
+        return this.name;
+    }
 }
