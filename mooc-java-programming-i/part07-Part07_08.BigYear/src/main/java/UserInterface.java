@@ -27,6 +27,10 @@ public class UserInterface {
             if (command.equals("All")) {
                 birds.all();
             }
+            
+            if (command.equals("One")) {
+                birds.one(scanner);
+            }
 
             if (command.equals("Quit")) {
                 break;
