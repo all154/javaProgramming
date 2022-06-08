@@ -17,4 +17,10 @@ public class Bird {
     public void addObservation() {
         this.observations++;
     }
+    
+    @Override
+    public String toString() {
+        return this.name + " (" + this.latinName + "): " 
+                + this.observations + " observations";
+    }
 }
