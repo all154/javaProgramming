@@ -36,4 +36,16 @@ public class ListOfRecipes {
             }
         }
     }
+    
+    public void findIngredient(String ingredient) {
+        System.out.println("Recipes: ");
+        for (Recipe recipe:this.listOfRecipes){
+            System.out.println(recipe.getIngredients());
+            for (String ingredientInRecipe: recipe.getIngredients()){
+                if (ingredientInRecipe.contains(ingredient)){
+                    System.out.println(recipe);
+                }
+            }
+        }
+    }
 }
