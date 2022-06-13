@@ -13,4 +13,9 @@ public class Recipe {
         this.ingredients = ingredients;
     }
     
+    @Override
+    public String toString(){
+        return this.title + ", cooking time: " + this.cookingTime;
+    }
+    
 }
