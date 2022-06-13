@@ -23,11 +23,17 @@ public class UserInterface {
                 + "find cooking time - searches recipes by cooking time");
 
         while (true) {
-            System.out.println("Enter command: ");
+            System.out.print("Enter command: ");
             String command = scanner.nextLine();
 
             if (command.equals("list")) {
                 listOfRecipes.list();
+            }
+            
+            if (command.equals("find name")) {
+                System.out.print("Searched word: ");
+                String word = scanner.nextLine();
+                listOfRecipes.findName(word);
             }
 
             if (command.equals("stop")) {
