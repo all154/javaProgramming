@@ -8,4 +8,8 @@ public class ListOfRecipes {
     public ListOfRecipes(){
         this.listOfRecipes = new ArrayList();
     }
+    
+    public void add(Recipe recipe){
+        this.listOfRecipes.add(recipe);
+    }
 }
