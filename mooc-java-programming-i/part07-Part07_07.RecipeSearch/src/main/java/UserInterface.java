@@ -61,7 +61,6 @@ public class UserInterface {
         String file = scanner.nextLine();
 
         ArrayList<String> list = new ArrayList<>();
-        ArrayList<String> ingredients = new ArrayList<>();
 
         try (Scanner scan = new Scanner(Paths.get(file))) {
             while (scan.hasNextLine()) {
@@ -70,16 +69,16 @@ public class UserInterface {
                 if (row.isEmpty()) {
                     String title = list.get(0);
                     int cookingTime = Integer.valueOf(list.get(1));
+                    ArrayList<String> ingredients = new ArrayList<>();
 
                     for (int i = 2; i < list.size(); i++) {
                         ingredients.add(list.get(i));
                     }
-
+                    
                     Recipe newRecipe = new Recipe(title, cookingTime, ingredients);
                     listOfRecipes.add(newRecipe);
 
                     list.clear();
-                    ingredients.clear();
                 } else {
                     list.add(row);
                 }
@@ -90,6 +89,7 @@ public class UserInterface {
 
         String title = list.get(0);
         int cookingTime = Integer.valueOf(list.get(1));
+        ArrayList<String> ingredients = new ArrayList<>();
 
         for (int i = 2; i < list.size(); i++) {
             ingredients.add(list.get(i));
