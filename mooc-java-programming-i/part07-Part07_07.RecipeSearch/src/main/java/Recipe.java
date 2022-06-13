@@ -13,6 +13,10 @@ public class Recipe {
         this.ingredients = ingredients;
     }
     
+    public String getTitle() {
+        return this.title;
+    }
+    
     @Override
     public String toString(){
         return this.title + ", cooking time: " + this.cookingTime;
