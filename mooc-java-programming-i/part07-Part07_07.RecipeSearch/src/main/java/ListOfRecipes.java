@@ -42,7 +42,7 @@ public class ListOfRecipes {
         for (Recipe recipe:this.listOfRecipes){
             System.out.println(recipe.getIngredients());
             for (String ingredientInRecipe: recipe.getIngredients()){
-                if (ingredientInRecipe.contains(ingredient)){
+                if (ingredientInRecipe.equals(ingredient)){
                     System.out.println(recipe);
                 }
             }
