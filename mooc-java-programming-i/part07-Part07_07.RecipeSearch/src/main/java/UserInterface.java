@@ -35,6 +35,12 @@ public class UserInterface {
                 String word = scanner.nextLine();
                 listOfRecipes.findName(word);
             }
+            
+            if (command.equals("find cooking time")) {
+                System.out.print("Max cooking time: ");
+                int maxCookingTime = Integer.valueOf(scanner.nextLine());
+                listOfRecipes.findCookingTime(maxCookingTime);
+            }
 
             if (command.equals("stop")) {
                 break;
