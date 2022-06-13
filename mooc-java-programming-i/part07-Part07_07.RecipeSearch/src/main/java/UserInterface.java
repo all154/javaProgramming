@@ -29,6 +29,10 @@ public class UserInterface {
             if (command.equals("list")) {
                 listOfRecipes.list();
             }
+            
+            if (command.equals("stop")) {
+                break;
+            }
         }
 
     }
