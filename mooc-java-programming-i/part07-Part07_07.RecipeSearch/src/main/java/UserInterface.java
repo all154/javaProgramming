@@ -32,19 +32,19 @@ public class UserInterface {
             }
 
             if (command.equals("find name")) {
-                System.out.print("Searched word: ");
+                System.out.println("Searched word: ");
                 String word = scanner.nextLine();
                 listOfRecipes.findName(word);
             }
 
             if (command.equals("find cooking time")) {
-                System.out.print("Max cooking time: ");
+                System.out.println("Max cooking time: ");
                 int maxCookingTime = Integer.valueOf(scanner.nextLine());
                 listOfRecipes.findCookingTime(maxCookingTime);
             }
             
             if (command.equals("find ingredient")) {
-                System.out.print("Ingredient: ");
+                System.out.println("Ingredient: ");
                 String ingredient = scanner.nextLine();
                 listOfRecipes.findIngredient(ingredient);
             }
