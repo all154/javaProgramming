@@ -12,4 +12,10 @@ public class ListOfRecipes {
     public void add(Recipe recipe){
         this.listOfRecipes.add(recipe);
     }
+    
+    public void list() {
+        for (Recipe recipe:this.listOfRecipes){
+            System.out.println(recipe);
+        }
+    }
 }
