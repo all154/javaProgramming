@@ -18,4 +18,13 @@ public class ListOfRecipes {
             System.out.println(recipe);
         }
     }
+    
+    public void findName(String name) {
+        System.out.println("Recipes:");
+        for (Recipe recipe:this.listOfRecipes){
+            if (recipe.getTitle().contains(name)){
+                System.out.println(recipe);
+            }
+        }
+    }
 }
