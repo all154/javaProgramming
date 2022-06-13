@@ -27,4 +27,13 @@ public class ListOfRecipes {
             }
         }
     }
+    
+    public void findCookingTime(int maxCookingTime) {
+        System.out.println("Recipes: ");
+        for (Recipe recipe:this.listOfRecipes){
+            if (recipe.getCookingTime() <= maxCookingTime){
+                System.out.println(recipe);
+            }
+        }
+    }
 }
