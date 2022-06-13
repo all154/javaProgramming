@@ -57,7 +57,7 @@ public class UserInterface {
     }
 
     public void readFile(ListOfRecipes listOfRecipes) {
-        System.out.print("File to read: ");
+        System.out.println("File to read: ");
         String file = scanner.nextLine();
 
         ArrayList<String> list = new ArrayList<>();
