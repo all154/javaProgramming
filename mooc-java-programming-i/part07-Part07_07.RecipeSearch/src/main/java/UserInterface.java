@@ -24,7 +24,7 @@ public class UserInterface {
                 + "find ingredient - searches recipes by ingredient");
 
         while (true) {
-            System.out.print("Enter command: ");
+            System.out.println("Enter command: ");
             String command = scanner.nextLine();
 
             if (command.equals("list")) {
